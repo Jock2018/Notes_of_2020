@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "command": "gcc",
+            "args": [
+                "${file}",   // 指定编译源代码文件             
+                "-o",
+                "${fileDirname}/build/${fileBasenameNoExtension}.exe", // 指定输出文件名
+                "-O0",      // 优化级别
+                "-ggdb3",   // 生成和调试有关的信息
+                "-Wall",    // 开启额外警告
+                "-std=c11", // 使用c11标准
+                "-Wno-format",
+                "-finput-charset=UTF-8", //输入编译器文本编码 默认为UTF-8
+                "-fexec-charset=GB18030",
+                "-D _USE_MATH_DEFINES"
+            ],
+
+            "type": "shell",
+            
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+
+            "presentation": {
+                "echo": true,
+                "reveal": "always", // 在“终端”中显示编译信息的策略，可以为always，silent，never
+                 "focus": false,
+                 "panel": "shared" // 不同的文件的编译信息共享一个终端面板
+            },
+        }
+    ]
+}
