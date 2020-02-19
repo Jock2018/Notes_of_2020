@@ -18,7 +18,6 @@ int main(void)
     printf("%#X\n", x);  // 十六进制输出，输出结果是：0X2F    %#X推荐使用
     printf("%#x\n", x);  // 十六进制输出，输出结果是：0x2f
     
-
     return 0;
 }
 
