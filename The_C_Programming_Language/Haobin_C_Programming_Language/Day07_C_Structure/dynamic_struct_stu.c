@@ -71,6 +71,36 @@ int main(void)
 /*
     在VSCode中的输出结果是：
 --------------------------
+请输入学生的个数：
+len = 3
+请输入1个学生的信息：
+age = 10
+name = zhangsan
+score = 66.6
+请输入2个学生的信息：
+age = 20
+name = lisi
+score = 55.5
+请输入3个学生的信息：
+age = 30
+name = wangwu
+score = 99.9
 
+
+学生的信息是：
+第1个学生的信息是：
+age = 20
+name = lisi
+score = 55.500000
+
+第2个学生的信息是：
+age = 10
+name = zhangsan
+score = 66.599998
+
+第3个学生的信息是：
+age = 30
+name = wangwu
+score = 99.900002
 --------------------------
 */
